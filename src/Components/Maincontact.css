@@ -1,0 +1,36 @@
+*{
+    font-family: 'Lato',sans-serif;
+}
+
+.main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 22%;
+    top: 9px;
+    background: #FFFFFF;
+}
+
+  
+.ag-header-cell-text {
+  font-size: 12px;
+}
+.ag-theme-alpine .ag-ltr .ag-cell {
+  font-size: 12px;
+}
+.connect{
+  font-weight: 600;
+  font-size: 12px;
+  display: none;
+}
+.ag-theme-alpine .ag-row:hover .connect {
+  /* opacity: 1; */
+  display: inline-block;
+}
+.connect:hover{
+  cursor: pointer;
+}
+.ag-theme-alpine {
+  display: inline-block;
+  width: 13% !important;
+}
