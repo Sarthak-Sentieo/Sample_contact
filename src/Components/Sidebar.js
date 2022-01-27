@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Sidebar.css'
 import { DefaultAC } from './DefaultAC'
+// import filter from './Maincontact'
+import Column from './Column'
+import MOCK_DATA from './MOCK_DATA.json'
 
 
 
@@ -13,7 +16,8 @@ function Sidebar() {
         setUsers(DefaultAC);
 
     }, []);
-    const handleChange = (e) => {
+    
+    function handleChange(e) {
         const { name, checked } = e.target;
         if(name ==="allSelect"){
           let tempUser =users.map(user=>{return {...user,isChecked : checked}})
@@ -41,10 +45,9 @@ function Sidebar() {
                                 <div className='title'>{user.title}</div>
                                 <div className='email'> 
                                 <input type="checkbox" name={user.email}  checked ={user?.isChecked || false}
-                                     onChange={handleChange} />
+                                     onChange={handleChange}  />
                                     <label htmlFor="title" className="form-label">&nbsp;&nbsp;&nbsp;{user.email}</label>
                                 </div>
-
                             </div>
 
                         )
@@ -54,9 +57,9 @@ function Sidebar() {
                 <hr className='gap' />
                 <div className='sidebelow'>
                     <ul>
-                        <li><i class="fas fa-link"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merge and Link</li>
-                        <li><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Account</li>
-                        <li><i class="fas fa-upload"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upload</li>
+                        <li><i className="fas fa-link"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merge and Link</li>
+                        <li><i className="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Account</li>
+                        <li><i className="fas fa-upload"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upload</li>
                     </ul>
                 </div>
 

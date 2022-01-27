@@ -24,7 +24,6 @@
   display: none;
 }
 .ag-theme-alpine .ag-row:hover .connect {
-  /* opacity: 1; */
   display: inline-block;
 }
 .connect:hover{
@@ -32,5 +31,11 @@
 }
 .ag-theme-alpine {
   display: inline-block;
-  width: 13% !important;
+  width: 98% !important;
+  z-index: 20;
 }
+.ag-theme-alpine [class^=ag-]{
+  box-sizing: initial !important;
+
+}
+

@@ -4,7 +4,7 @@ import Maincontact from './Components/Maincontact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Sidebar />
       <Maincontact />
     </div>

@@ -6,7 +6,7 @@ function Notes() {
     return (
         <div className='toggle2 '>
             <div className='create'>
-                <span><i class="fas fa-plus"></i> Create & Share New Note</span>
+                <span><i className="fas fa-plus"></i> Create & Share New Note</span>
             </div>
             <div className='heading'>
                 Existing Shared Notes
